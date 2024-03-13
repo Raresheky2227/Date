@@ -1,0 +1,148 @@
+<HTML>
+<head>
+<title>Wanna date??:></title>
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(50,0,0); /* Fallback color */
+  background-color: rgba(50,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fedddd;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {text-align: center;}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top:2%;
+}
+
+
+.button1 {background-color: #4CAF50;
+			margin-left:35%;}
+.button2 {background-color: #FA2C00;
+			margin-left:12.5%;}
+			
+.button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2:hover {background-color: #9B2020}
+
+.button2:active {
+  background-color: #FA2C00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+
+<h1>Will you go on a date with me?</h1>
+
+<img align="middle" src="image1.gif" style="width:25%">
+
+<button class="button button1" type="button" id="btn1">YES!<3 <3 <3</button>
+
+<button class="button button2" type="button" id="btn2" onclick="myFunction()">NO! :< </button>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><h1>OMG I love you so much honey!<3</h1></p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("btn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myFunction() {
+  x = window.screen.availHeight * Math.random();
+  y = window.screen.availWidth * Math.random();
+  if (x > window.screen.availHeight - 200)
+	x = x > window.screen.availHeight - 200;
+  document.getElementById("btn2").style.position = "absolute";
+  document.getElementById("btn2").style.top = x;
+  document.getElementById("btn2").style.right = y;
+}
+</script>
+<a href="http://twitcount.com/btn" class="twitcount-button" data-count="vertical" data-size="" data-url="" data-text="" data-related="" data-hashtag="" data-via="Raresheky08">TwitCount Button</a><script type="text/javascript" src="https://static1.twitcount.com/js/button.js"></script>
+
+</BODY>
+</HTML>
